@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de cadastro Kenzie</title>
+</head>
+<body>
+    <img class="img" src="img/download.jpg" alt="Logo da Kenzie">
+    <h1 class="titulo">Cadastro Kenzie</h1>
+    <h2 class="kenzie">Kenzie Academy</h2>
+    <form class="form">
+        <div class="Nomee">
+            <label for="Nome">Nome</label>
+            <input type="text" id="Nome" placeholder="Digite aqui" required>
+         </div>
+         <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite aqui" required> 
+        </div>
+        <div>
+            <label class="descrição" style="display: block;" class="descrição" for="descrição">Descrição</label>
+            <textarea type="textarea" id="descrição" maxlength="600" minlength="5" placeholder="Digite uma descrição sobre você aqui" cols="17" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="modulo">Módulo</label>
+            <select name="modulo"id="modulo" required>
+                <option value="">Escolher módulo</option>
+                <option value="1">Módulo 3</option>
+                <option value="2">Módulo 2</option>
+                <option value="3">Módulo 1</option>
+            </select>
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" minlength="8">
+        </div>
+        <div>
+            <label for="senha2">Confirmar senha</label>
+            <input type="password" name="Confirmarsenha" id="senha2" minlength="8" required="senha">
+        </div>
+
+        <div>
+            <p>Deseja receber novidades em seu email?</p>
+            <label for="sim">Sim</label>
+            <input type="radio" name="receberatt" id="sim">
+            <label for="nao">Não</label>
+            <input type="radio" name="receberatt" id="nao">
+        </div>
+
+        <button class="botão" type="submit">Cadastrar</button>
+        
+
+    </form>
+</body>
+</html>
